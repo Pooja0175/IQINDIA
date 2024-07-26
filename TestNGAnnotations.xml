@@ -3,7 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testNgCode.TestNGAnnotations"/>
+      <class name="testNgCode.TestNGAnnotations">
+		  <methods>
+			  <include name="f"></include>
+		  </methods>
+      </class>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> 
+</suite>

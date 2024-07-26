@@ -13,6 +13,11 @@ import org.testng.annotations.AfterSuite;
 public class TestNGAnnotations {
   @Test
   public void f() {
+	  System.out.println("text case f");
+  }
+  @Test
+  public void g() {
+	  System.out.println("text case g");
   }
   @BeforeMethod
   public void beforeMethod() {
