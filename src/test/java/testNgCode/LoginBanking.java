@@ -39,8 +39,7 @@ public class LoginBanking {
 		String actual = driver.findElement(By.xpath("//h1[starts-with(text(), 'Hello')]")).getText();
 		String expected = "Hello";
 		System.out.println(actual);
-//		softassert.assertEquals(actual,expected,"name not found"); // soft assert
-		Assert.assertEquals(actual,expected,"name not found"); // hard assert
+
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[text()='PERSONAL']")).click();
 		Thread.sleep(2000);
@@ -49,21 +48,16 @@ public class LoginBanking {
 		driver.findElement(By.xpath("//a[text()='contact Altoro Mutual']")).click();
 		WebElement we = driver.findElement(By.xpath("//h1[text()='Contact Us']"));
 		System.out.println(we.getText());
-		// go to small business
+
+	}
+
+	@Test
+	public void smallBusiness() throws Exception {
 		js.executeScript("document.getElementById('LinkHeader3').click()");
 		Thread.sleep(2000);
 		WebElement sb = driver.findElement(By.xpath("//h1[text()='Small Business']"));
 		System.out.println(sb.getText());
-		softassert.assertAll();
 	}
-
-//	@Test
-//	public void smallBusiness() throws Exception {
-//		js.executeScript("document.getElementById('LinkHeader3').click()");
-//		Thread.sleep(2000);
-//		WebElement sb = driver.findElement(By.xpath("//h1[text()='Small Business']"));
-//		System.out.println(sb.getText());
-//	}
 
 	@Test
 	public void verify() {

@@ -19,7 +19,7 @@ public class WindowHandle {
 		driver.get("https://www.hyrtutorials.com/p/window-handles-practice.html");
 		
 		
-		String pwindow=driver.getWindowHandle();
+		String pwindow=driver.getWindowHandle(); 
 		System.out.println(pwindow);
 		driver.findElement(By.xpath("//input[@class='whTextBox']")).sendKeys("Text in Parent window");
 		
@@ -30,6 +30,7 @@ public class WindowHandle {
 		we.click();
 		// use multiple windows
 		Set<String> cwindow=driver.getWindowHandles();
+//		driver.switchTo().window(c)
 		for (String str:cwindow) {
 			if (!str.equals(pwindow)) {
 				driver.switchTo().window(str);

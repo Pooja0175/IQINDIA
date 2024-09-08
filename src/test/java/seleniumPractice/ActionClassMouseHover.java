@@ -20,6 +20,7 @@ public class ActionClassMouseHover {
 		JavascriptExecutor js= (JavascriptExecutor)driver;
 		Actions act=new Actions(driver);
 		driver.get("https://www.flipkart.com/");
+		driver.navigate()
 		String pwindow = driver.getWindowHandle();
 		
 // 		choose the dress		

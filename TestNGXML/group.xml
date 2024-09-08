@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test Fire" enabled="false">
+    <classes>
+      <class name="testNgCode.GroupTestCase">
+		  <methods>
+			  <include name="login"></include>
+			  <include name="personalDetails"></include>
+			  <include name="smallBusiness"></include>
+		  </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+    <test name="Wait Test">
+    <classes>
+      <class name="testNgCode.GroupTestCase">
+		  <methods>
+			  <include name="explicitWait"></include>
+		  </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+    <test name="CheckBox Test" enabled="false">
+    <classes>
+      <class name="testNgCode.GroupTestCase">
+		  <methods>
+			  <include name="checkBox"></include>
+		  </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+    <test name="Alert Test">
+    <classes>
+      <class name="testNgCode.GroupTestCase">
+		  <methods>
+			  <include name="alertHandle"></include>
+		  </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

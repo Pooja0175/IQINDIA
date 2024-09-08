@@ -33,12 +33,12 @@ public class TakeScreenshotDynamic {
 		driver.get("https://www.google.co.in/");
 		
 		// select file store path
-		String path="C:\\Users\\Sheetal\\eclipse-workspace\\SELENIUM\\ScreenShot\\"+ldt+".png";
+		String path="C:\\Users\\Sheetal\\eclipse-workspace\\SELENIUM\\ScreenShot\\"+str+".png";
 		
 		// create class of FileOutputStream and use its constructor
 		FileOutputStream fos=new FileOutputStream(path);
 		
-		// take screen shot using base64
+		// take screen shot using BYTES
 		byte []bytearr =ts.getScreenshotAs(OutputType.BYTES);
 		fos.write(bytearr);
 		driver.close();
