@@ -1,0 +1,8 @@
+09 Sep 2024 13:29:39,779 [main] INFO  log4J2.Log4j2Test - User launch url
+09 Sep 2024 13:29:39,860 [main] INFO  log4J2.Log4j2Test - user entered uname
+09 Sep 2024 13:29:39,881 [main] INFO  log4J2.Log4j2Test - User entered password
+09 Sep 2024 13:29:40,587 [main] INFO  log4J2.Log4j2Test - user login successfully
+09 Sep 2024 14:10:56,039 [main] INFO  log4J2.Log4j2Test - User launch url
+09 Sep 2024 14:10:56,134 [main] INFO  log4J2.Log4j2Test - user entered uname
+09 Sep 2024 14:10:56,155 [main] INFO  log4J2.Log4j2Test - User entered password
+09 Sep 2024 14:10:56,861 [main] INFO  log4J2.Log4j2Test - user login successfully

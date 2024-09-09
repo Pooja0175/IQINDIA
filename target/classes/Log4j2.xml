@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration>
-	<Appenders>
-		<Console name="CONSOLE">
-			<PatternLayout pattern="%p - %m%n" />
-		</Console>
-		<File name="MAIN" fileName="logs/main.log">
-			<JsonTemplateLayout />
-		</File>
-		<File name="DEBUG_LOG" fileName="logs/debug.log">
-			<PatternLayout pattern="%d [%t] %p %c - %m%n" />
-		</File>
-	</Appenders>
-	<Loggers>
-		<Root level="INFO">
-			<AppenderRef ref="CONSOLE" level="WARN" />
-			<AppenderRef ref="MAIN" />
-		</Root>
-		<Logger name="org.example" level="DEBUG">
-			<AppenderRef ref="DEBUG_LOG" />
-		</Logger>
-	</Loggers>
+<Configuration status="WARN" strict="true">
+  <Appenders>
+    <Appender type="Console" name="STDOUT">
+      <Layout type="PatternLayout" 
+      pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Appender> 
+    
+    <Appender type="File" name="file" fileName="logs\app.log">
+      <Layout type="PatternLayout" 
+      pattern="%d{DATE} [%t] %-5level %logger{36} - %msg%n"/>
+    </Appender> 	   
+    </Appenders>
+  
+  <Loggers>
+    
+    <Root level="All">
+      <AppenderRef ref="file"/>
+    </Root>
+  </Loggers>
 </Configuration>

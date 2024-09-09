@@ -13,6 +13,7 @@ public class TestClassLogin extends BaseClassBrowser {
 	PageClassLogin pcl;
 	
 	public TestClassLogin() throws IOException, InterruptedException {
+		
 		String browserType = prop.getProperty("browser");
 		
 		// run with dynamic browser

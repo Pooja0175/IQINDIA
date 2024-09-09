@@ -42,15 +42,19 @@ public class GetKundli {
 		WebElement we6=driver.findElement(By.id("Kund_F_BirthPlace_AM"));
 		Select sl7=new Select(we6);
 		sl7.selectByVisibleText("PM");
-		driver.findElement(By.xpath("//input[@id='Kund_BirthPlace']")).sendKeys("Gurgaon, Haryana, IN");
+		driver.findElement(By.xpath("//input[@id='Kund_BirthPlace']")).sendKeys("Gurgaon");
 		
 		
 		// use action class 
 		Actions act=new Actions(driver);
-		WebElement we7=driver.findElement(By.id("ui-id-2"));
+		//WebElement we7=driver.findElement(By.id("ui-id-2"));
+		Thread.sleep(4000);
+		//act.moveToElement(we7).build().perform();
 		act.keyDown(Keys.ARROW_DOWN).build().perform();
 		Thread.sleep(1000);
 		act.keyUp(Keys.ARROW_DOWN).build().perform();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//ul[@id='ui-id-1']/li/div")).click();
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//button[text()='Get Your Kundli']")).click();
 		

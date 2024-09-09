@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="assignment.GetKundli">
+      <class name="testNgCode.LoginWithParameters">
         <methods>
-          <include name="getKundliMethod"/>
+          <include name="tearDown"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- assignment.GetKundli -->
+      </class> <!-- testNgCode.LoginWithParameters -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
